@@ -1,0 +1,22 @@
+<div class="loading-screen-wrapper" *ngIf="!cloakHidden">
+   <span class="loading-screen-icon">
+       <img class="loading-img" src="../assets/images/bb8.gif" alt="">
+   </span>
+</div>
+
+<section>
+    <mat-grid-list cols="1" rowHeight="100px">
+        <mat-grid-tile (click)="goHome()"
+            [colspan]="1"
+            [rowspan]="2"
+        >  
+        </mat-grid-tile>
+            <img class="logo" src="../assets/images/star_wars_logo.png" alt="" >
+    </mat-grid-list>
+
+    <router-outlet></router-outlet>
+
+    <div class="footer">
+        <p>&copy; 2019 SW-Pedia </p>
+    </div>
+</section>

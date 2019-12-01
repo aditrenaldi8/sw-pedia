@@ -1,0 +1,30 @@
+<section>
+    <mat-card class="frame"> 
+        <div class="title">
+            <h3>Starships</h3>
+        </div>
+    
+        <mat-card-content>
+            <mat-paginator #paginator
+                [length]="length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                (page)="pageChangeEvent($event)">
+            </mat-paginator>
+
+            <mat-grid-list cols="20" rowHeight="75px">
+                <mat-grid-tile *ngFor="let item of data"
+                    [colspan]="4"
+                    [rowspan]="2"
+                >
+                    <div class="content-container"
+                      matRipple
+                      [matRippleCentered]="true">
+                        {{ item.name}}
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card-content>
+        
+    </mat-card>
+</section>

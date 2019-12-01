@@ -1,0 +1,74 @@
+<section>
+    <mat-grid-list cols="12" rowHeight="100px">
+        <mat-grid-tile
+            [colspan]="4"
+            [rowspan]="2"
+        >
+            <div class="content-container" (click)="goTo('characters')"
+              matRipple
+              [matRippleCentered]="true">
+                Characters
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile
+            [colspan]="4"
+            [rowspan]="2"
+        >
+
+            <div class="content-container" (click)="goTo('planets')"
+              matRipple
+              [matRippleCentered]="true">
+                Planets
+            </div>
+           
+        </mat-grid-tile>
+
+        <mat-grid-tile
+            [colspan]="4"
+            [rowspan]="2"
+        >
+
+            <div class="content-container" (click)="goTo('species')"
+              matRipple
+              [matRippleCentered]="true">
+                Species
+            </div> 
+        </mat-grid-tile>
+
+        <mat-grid-tile
+            [colspan]="4"
+            [rowspan]="2"
+        >
+
+            <div class="content-container" (click)="goTo('starships')"
+              matRipple
+              [matRippleCentered]="true">
+                Starships
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile
+            [colspan]="4"
+            [rowspan]="2"
+        >
+
+            <div class="content-container" (click)="goTo('vehicles')"
+              matRipple
+              [matRippleCentered]="true">
+                Vehicles
+             </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile
+            [colspan]="4"
+            [rowspan]="2"
+        >
+            <div class="content-container" (click)="goTo('films')"
+              matRipple
+              [matRippleCentered]="true">
+                Films
+            </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+</section>
